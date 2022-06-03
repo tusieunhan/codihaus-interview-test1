@@ -135,7 +135,6 @@
 }
 .body-service__content-left{
     flex: 1;
-    background-color: red; 
 }
 
 .card{
@@ -151,4 +150,41 @@
 .content-right__item-btn{
     bottom: 0;
     height: 42px;
+}
+.content-left__text{
+    flex: 1;
+    padding-top: 30px;
+    text-align: left;
+}
+.content-left__img{
+    height: 100%;
+    flex-direction: column;
+}
+.content-left__img img{
+    width: 324px;
+    height: 232px;
+    object-fit: cover;
+}
+.content-left__text-title{
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+.content-left__text-item p{
+    font-size: 18px;
+}
+.point{
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    background-color: var(--second-color);
+}
+.content-left__text-list{
+    flex-wrap: wrap;
+}
+.content-left__text-item{
+    width: 48%;
+}
+.content-left__text-desc{
+    margin-top: 40px;
+    line-height: 1.5;
 }

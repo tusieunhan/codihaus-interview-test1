@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/basic.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
@@ -29,6 +30,14 @@
                     </div>
 
                 </div>
+               
+                <div class="topmost-info__item flex gap-5">
+                    <img src="./icon/Group 188.svg" alt="">
+                    <div class="topmost-info__item-name">
+                        <p>Location</p>
+                        <p class="color-second">0123 Some Place</p>
+                    </div>
+                </div>
                 <div class="topmost-info__item flex gap-5">
                     <img src="./icon/Group 178.svg" alt="">
                     <div class="topmost-info__item-name">
@@ -36,13 +45,6 @@
                         <p class="color-second">09:00 - 20:00 Everyday</p>
                     </div>
 
-                </div>
-                <div class="topmost-info__item flex gap-5">
-                    <img src="./icon/Group 188.svg" alt="">
-                    <div class="topmost-info__item-name">
-                        <p>Location</p>
-                        <p class="color-second">0123 Some Place</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -57,8 +59,14 @@
                     <li class="navbar-list__item color-white">News</li>
                     <li class="navbar-list__item color-white">Contact</li>
                 </ul>
+                <div class="mobile__navbar-logo color-accent font-yeseva" style="display: none;">
+                    MEDDICAL
+                </div>
                 <div class="navbar-group flex gap-20">
                     <img src="./icon/Group 175.png" alt="" class="navbar-group_search">
+                    <div class="navbar-group_menu"  style="display: none;">
+                        <img src="./icon/menu.png" alt="" >
+                    </div>
                     <div class="group_btn color-primary bg-acceny">
                         Appointment
                     </div>
@@ -94,7 +102,7 @@
         <!-- title G -->
       <div class="content body">
           <div class="body-welcome flex-center">
-            <div class="title-G ">
+            <div class="title-G body-welcome-title">
                 <div class="title-second">
                     <p class=" color-second w-700">Welcome to Meddical</p>
                 </div>
@@ -109,7 +117,7 @@
                 <p class="color-second">Learn More</p>
                 <img src="./icon/Vector.png" alt="">
             </div>
-            <img class="w-full" src="./img/Group 183.png" alt="">
+            <img class="w-full banner2" src="./img/Group 183.png" alt="">
           </div>
           <div class="body-service flex-center">
             <div class="title-G ">
@@ -122,29 +130,31 @@
             </div>
             <div class="body-service__content flex gap-20">
                 <div class="body-service__content-right">
-                    <div class="content-right__item ">
-                      <div class="card flex-center gap-10">
-                        <img src="./icon/Checkup.png" alt="">
-                        <p class="w-400">Free Checkup</p>
-                      </div>
-                    </div>
-                    <div class="content-right__item active">
-                      <div class="card flex-center gap-10">
-                        <img src="./icon/Heart.png" alt="">
-                        <p class="w-400">Cardiogram</p>
-                      </div>
-                    </div>
-                    <div class="content-right__item ">
-                      <div class="card flex-center gap-10">
-                        <img src="./icon/Testing.png" alt="">
-                        <p class="w-400">Dna Testing</p>
-                      </div>
-                    </div>
-                    <div class="content-right__item ">
-                      <div class="card flex-center gap-10">
-                        <img src="./icon/Blood.png" alt="">
-                        <p class="w-400">Blood Bank</p>
-                      </div>
+                    <div class="body-service__list">
+                        <div class="content-right__item ">
+                            <div class="card flex-center gap-10">
+                              <img src="./icon/Checkup.png" alt="">
+                              <p class="w-400">Free Checkup</p>
+                            </div>
+                          </div>
+                          <div class="content-right__item active">
+                            <div class="card flex-center gap-10">
+                              <img src="./icon/Heart.png" alt="">
+                              <p class="w-400">Cardiogram</p>
+                            </div>
+                          </div>
+                          <div class="content-right__item ">
+                            <div class="card flex-center gap-10">
+                              <img src="./icon/Testing.png" alt="">
+                              <p class="w-400">Dna Testing</p>
+                            </div>
+                          </div>
+                          <div class="content-right__item ">
+                            <div class="card flex-center gap-10">
+                              <img src="./icon/Blood.png" alt="">
+                              <p class="w-400">Blood Bank</p>
+                            </div>
+                          </div>
                     </div>
                     <div class="content-right__item-btn active flex-center">
                         <p>View All</p>

@@ -153,3 +153,47 @@
       background-color: var(--primary-color);
       color: #BFD2F8;
   }
+  .footer-list{
+    padding: 70px 0 50px 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  border-bottom: 2px solid var(--accent-color);
+
+  }
+  .footer-item__logo{
+    font-size: 36px !important;
+  }
+  .footer-item__title{
+    height: 50px;
+    font-size: 18px;
+  }
+  .footer-item__desc{
+    line-height: 2;
+  }
+.footer-item__desc-email{
+  height: 50px;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+  .footer-item__desc-email input{
+    flex: 1;
+    background-color: transparent;
+    outline: none;
+    height: 100%;
+    border: none;
+    padding:  0 10px;
+  }
+
+  .footer-item__desc-email input::placeholder{
+    font-family: "Poppins";
+    color: var(--primary-color);
+  }
+  .footer-item__desc-email img{
+    width: 24px;
+    height: 24px;
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  .footer-copyright{
+    margin-top: 50px;
+  }

@@ -220,10 +220,92 @@
     background-size: cover;
     position: relative;
 }
-.book__sub{
+.book__sub__white{
     position: absolute;
     inset: 0;
     background-color: rgb(255, 255, 255);
-    opacity: 0.4;
+    opacity: 80%;
+}
+.book__sub{
     flex-direction: column;
+    position: absolute;
+    inset: 0;
+    z-index: 9;
+}
+.sub-content__desc-title{
+    font-size: 32px;
+    margin: 10px 0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:#000;
+}
+.sub-content__desc{
+    line-height: 1.5;
+    margin-right: 30px;
+    width: 50%;
+}
+
+
+/* list from inputttttt */
+.sub-content__input{
+    width: 49%;
+    line-height: 1.5;
+    height: 445px;
+    flex-wrap: wrap;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+.sub-content__input-list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.sub-content__input textarea:focus,
+.sub-content__input input:focus,
+.sub-content__input textarea,
+.sub-content__input select,
+.sub-content__input input{
+    background-color: var(--primary-color);
+    padding: 10px;
+    border:  1px solid var(--accent-color);
+    caret-color: var(--accent-color);
+    color: var(--accent-color);
+    outline: none;
+    font-family: 'Poppins';
+}
+
+.sub-content__input textarea::placeholder,
+.sub-content__input input::placeholder{
+    color: var(--accent-color);
+}
+
+.sub-content__input-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+}
+.sub-content__input textarea{
+    width: calc(100% - 22px);
+}
+input::-webkit-calendar-picker-indicator {
+    background-image: url(../icon/Down.png);
+    right: 10px;
+  }
+.sub-content__input input::-webkit-datetime-edit {
+    color: var(--accent-color);
+    font-family: 'Poppins';
+}
+.sub-content__input-btn{
+    height: 50px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+select {
+    background-color: var(--primary-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;      
+    background: url(../icon/Down.png) no-repeat ;
+    background-position: right 10px bottom 15px;
+    background-size: 14px 9px;
 }

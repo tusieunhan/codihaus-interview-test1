@@ -217,3 +217,14 @@
 .footer-copyright {
   margin-top: 50px;
 }
+.hover-o:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.hover:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  opacity: 0.8;
+}

@@ -48,6 +48,8 @@
   height: 550px;
 }
 .banner-btn {
+  width: -webkit-min-content;
+  width: -moz-min-content;
   width: min-content;
 }
 .banner {
@@ -164,6 +166,7 @@
 .content-left__img img {
   width: 324px;
   height: 232px;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .content-left__text-title {
@@ -267,6 +270,26 @@
   color: var(--accent-color);
   outline: none;
   font-family: "Poppins";
+}
+
+.sub-content__input textarea::-webkit-input-placeholder,
+.sub-content__input input::-webkit-input-placeholder {
+  color: var(--accent-color);
+}
+
+.sub-content__input textarea::-moz-placeholder,
+.sub-content__input input::-moz-placeholder {
+  color: var(--accent-color);
+}
+
+.sub-content__input textarea:-ms-input-placeholder,
+.sub-content__input input:-ms-input-placeholder {
+  color: var(--accent-color);
+}
+
+.sub-content__input textarea::-ms-input-placeholder,
+.sub-content__input input::-ms-input-placeholder {
+  color: var(--accent-color);
 }
 
 .sub-content__input textarea::placeholder,
@@ -436,6 +459,11 @@ select {
 }
 .contact__item-desc {
   line-height: 1.5;
+}
+.body-welcome__btn p {
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 
 /* footer */
